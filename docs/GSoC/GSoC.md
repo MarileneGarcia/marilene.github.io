@@ -13,7 +13,7 @@ My GSoC Experience with Analog Devices
 ## About Me
 My name is Marilene Andrade Garcia. I am a computer engineer from Brazil. Since finishing my degree, I have been seeking opportunities to work in the embedded development field.
 
-I have been working with Analog Devices under a Linux Foundation project for the past two months, writing a new Linux Kernel device driver in the Industrial Input/Output subsystem for an analog-to-digital converter (ADC).
+I have been working with Analog Devices under a Linux Foundation project for the past three months, writing a Linux Kernel device driver in the Industrial Input/Output subsystem for an analog-to-digital converter (ADC).
 
 ## About Analog Devices
 Analog Devices, Inc. (ADI) is an American multinational semiconductor company specializing in data conversion, signal processing, and power management technologies.
@@ -34,6 +34,9 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - I connected the MAX14001PMB with the Raspberry Pi in the following configuration.
 ![demo](https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/demo.gif)
 
+### Studying the Evaluation Board
+- The MAX14001PMB evaluation board can measure high line voltage values (up to 230V AC or ±325V DC) and load current values (up to 5A). However, the device itself only accepts input values below the Vrefin, which is usually 1.25V. To handle this, the board includes an circuitry that scales the signals proportionally and applies an offset, allowing the measurement of negative values.
+- To analyze the output readings, the evaluation board circuitry was studied, and formulas were derived to calculate the input current and voltage. These formulas are still under review to verify their accuracy. They can be found in the following PDF: [MAX14001PMB_circuit_analysis](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf)
 
 ## Important Links
 
