@@ -1,5 +1,6 @@
 # Final report for GSoC'25
-My GSoC Experience with Analog Devices
+My GSoC Experience with Analog Devices  
+<img src="https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/setup_test.jpg" alt="setup" width="350" height="700">
 
 ## Table of Contents
 1. [About Me](#example)
@@ -32,7 +33,6 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - I also configured my VLAN to allow access to the Raspberry Pi via Wi-Fi and SSH.
 - Since I do not yet have a DC source, I used the Raspberry Pi’s 5V power supply and a 10K potentiometer to test voltage measurements. Unfortunately, the current supply was too low, so the current measurements were unreliable.
 - I connected the MAX14001PMB with the Raspberry Pi in the following configuration.
-![demo](https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/demo.gif)
 
 ### Studying the Evaluation Board
 - The MAX14001PMB evaluation board can measure high line voltage values (up to 230V AC or ±325V DC) and load current values (up to 5A). However, the device itself only accepts input values below the Vrefin, which is usually 1.25V. To handle this, the board includes an circuitry that scales the signals proportionally and applies an offset, allowing the measurement of negative values.
@@ -52,7 +52,8 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - After sending the patches, we discovered a commit set from 2023 with the same goal of providing support for the MAX14001 device, which had not yet been accepted. It is therefore likely that my changes will be merged into the previously existing code, which already provides nice support for the device. I will continue by generating updated versions of the older commits to improve the code until it is accepted. All related discussions can be found here: [lore kernel max14001](https://lore.kernel.org/all/?q=max14001)
 
 ### Demo of the user-space program on Raspberry Pi 5 reading values from my MAX14001 driver version
-[Demo Linux Kernel Driver MAX14001](https://www.youtube.com/shorts/xqOkkvufINA)
+- [Demo Linux Kernel Driver MAX14001](https://www.youtube.com/shorts/xqOkkvufINA)  
+![demo](https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/demo.gif)
 
 ## Important Links
 
