@@ -36,7 +36,13 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 
 ### Studying the Evaluation Board
 - The MAX14001PMB evaluation board can measure high line voltage values (up to 230V AC or ±325V DC) and load current values (up to 5A). However, the device itself only accepts input values below the Vrefin, which is usually 1.25V. To handle this, the board includes an circuitry that scales the signals proportionally and applies an offset, allowing the measurement of negative values.
-- To analyze the output readings, the evaluation board circuitry was studied, and formulas were derived to calculate the input current and voltage. These formulas are still under review to verify their accuracy. They can be found in the following PDF: [MAX14001PMB_circuit_analysis](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf)
+- To analyze the output readings, I studied the evaluation board circuitry and derived formulas to calculate the input current and voltage. These formulas are still under review to verify their accuracy and can be found in the following PDF: [MAX14001PMB_circuit_analysis](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf)
+
+### Studying the MAX14001/MAX14002 and Developing the Driver Code
+- To write the driver code, I studied the MAX14001/MAX14002 datasheet, as well as the IIO subsystem and other IIO ADC drivers.
+- I wrote several versions of the code, but my mentor and I decided to prepare a clean and organized version for upstream submission. This version currently supports only the features related to reading two registers: one containing the latest ADC reading and another containing the latest filtered ADC reading. The additional features are planned to be submitted upstream in future patches.
+- All of the work done can be followed in this PR:
+[iio: adc: Add initial driver support for MAX14001/MAX14002](https://github.com/analogdevicesinc/linux/pull/2848)
 
 ## Important Links
 
