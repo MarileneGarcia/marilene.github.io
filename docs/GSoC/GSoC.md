@@ -32,7 +32,6 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - I used a USB-to-Serial FTDI232 adapter to access the Raspberry Pi terminal from my computer.
 - I also configured my VLAN to allow access to the Raspberry Pi via Wi-Fi and SSH.
 - Since I do not yet have a DC source, I used the Raspberry Pi’s 5V power supply and a 10K potentiometer to test voltage measurements. Unfortunately, the current supply was too low, so the current measurements were unreliable.
-- I connected the MAX14001PMB with the Raspberry Pi in the following configuration.
 
 ### Studying the Evaluation Board
 - The MAX14001PMB evaluation board can measure high line voltage values (up to 230V AC or ±325V DC) and load current values (up to 5A). However, the device itself only accepts input values below the Vrefin, which is usually 1.25V. To handle this, the board includes an circuitry that scales the signals proportionally and applies an offset, allowing the measurement of negative values.
@@ -56,6 +55,11 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 ![demo](https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/demo.gif)
 
 ## Important Links
+- Pull Request with the MAX14001 driver code in the Analog Devices repository: [https://github.com/analogdevicesinc/linux/pull/2848](https://github.com/analogdevicesinc/linux/pull/2848)
+- My fork of the Analog Devices repository with the MAX14001 driver code: [https://github.com/MarileneGarcia/linux/tree/rpi-6.6.y_GSOC_2025_MAX14001](https://github.com/MarileneGarcia/linux/tree/rpi-6.6.y_GSOC_2025_MAX14001)
+- My repository of the user-space MAX14001PMB reader program: [https://github.com/MarileneGarcia/max14001pmb_reader](https://github.com/MarileneGarcia/max14001pmb_reader)
+- MAX14001PMB circuit formulas analysis: [https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/MAX14001PMB_circuit_analysis.pdf)
+- Kernel mailing list thread related to MAX14001: [https://lore.kernel.org/all/?q=max14001](https://lore.kernel.org/all/?q=max14001)
 
 ## Future Work
 
