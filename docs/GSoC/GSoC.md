@@ -41,8 +41,18 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 ### Studying the MAX14001/MAX14002 and Developing the Driver Code
 - To write the driver code, I studied the MAX14001/MAX14002 datasheet, as well as the IIO subsystem and other IIO ADC drivers.
 - I wrote several versions of the code, but my mentor and I decided to prepare a clean and organized version for upstream submission. This version currently supports only the features related to reading two registers: one containing the latest ADC reading and another containing the latest filtered ADC reading. The additional features are planned to be submitted upstream in future patches.
-- All of the work done can be followed in this PR:
+- All of the work done can be followed in this PR. It includes the driver code, the dt-binding documentation, and an overlay to include MAX14001 into raspberry pi dts.
 [iio: adc: Add initial driver support for MAX14001/MAX14002](https://github.com/analogdevicesinc/linux/pull/2848)
+
+### Developing an User Space Code to use the Driver
+- To test the driver and get readings from the MAX14001PMB, the following user-space code was developed: [MAX14001PMB Reader Program](https://github.com/MarileneGarcia/max14001pmb_reader)
+
+### Upstreaming the Device Driver Kernel Code
+- I generated three patches based on the [IIO tree, testing branch](https://git.kernel.org/pub/scm/linux/kernel/git/jic23/iio.git/log/?h=testing) to submit the driver code upstream: one with the cover letter explaining the driver, one with the device tree binding documentation, and another with the driver code.
+- After sending the patches, we discovered a commit set from 2023 with the same goal of providing support for the MAX14001 device, which had not yet been accepted. It is therefore likely that my changes will be merged into the previously existing code, which already provides nice support for the device. I will continue by generating updated versions of the older commits to improve the code until it is accepted. All related discussions can be found here: [lore kernel max14001](https://lore.kernel.org/all/?q=max14001)
+
+### Demo of the user-space program on Raspberry Pi 5 reading values from my MAX14001 driver version
+[![Demo Linux Kernel Driver MAX14001](https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/frame.png)](https://www.youtube.com/shorts/xqOkkvufINA)
 
 ## Important Links
 
