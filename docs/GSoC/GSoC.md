@@ -52,7 +52,7 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - After sending the patches, we discovered a commit set from 2023 with the same goal of providing support for the MAX14001 device, which had not yet been accepted. It is therefore likely that my changes will be merged into the previously existing code, which already provides nice support for the device. I will continue by generating updated versions of the older commits to improve the code until it is accepted. All related discussions can be found here: [lore kernel max14001](https://lore.kernel.org/all/?q=max14001)
 
 ### Demo of the user-space program on Raspberry Pi 5 reading values from my MAX14001 driver version
-[![Demo Linux Kernel Driver MAX14001](https://github.com/MarileneGarcia/marilene.github.io/blob/main/midia/GSoC/frame.png)](https://www.youtube.com/shorts/xqOkkvufINA)
+[Demo Linux Kernel Driver MAX14001](https://www.youtube.com/shorts/xqOkkvufINA)
 
 ## Important Links
 
