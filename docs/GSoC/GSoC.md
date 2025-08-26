@@ -3,13 +3,13 @@ My GSoC Experience with Analog Devices
 <img src="midia/setup_test.jpg" alt="setup" width="470" height="700">
 
 ## Table of Contents
-1. [About Me](#example)
-2. [About Analog Devices](#example2)
-3. [Project Overview](#third-example)
-4. [Work Done](#fourth-examplehttpwwwfourthexamplecom)
-5. [Important Links](#fourth-examplehttpwwwfourthexamplecom)
-6. [Future Work](#fourth-examplehttpwwwfourthexamplecom)
-7. [Thanks to My Mentors](#fourth-examplehttpwwwfourthexamplecom)
+1. [About Me](#about-me)
+2. [About Analog Devices](#about-analog-devices)
+3. [Project Overview](#project-overview)
+4. [Work Done](#work-done)
+5. [Important Links](#important-links)
+6. [Future Work](#future-work)
+7. [Thanks to My Mentors](#thanks-to-my-mentors)
 
 ## About Me
 My name is Marilene Andrade Garcia. I am a computer engineer from Brazil. Since finishing my degree, I have been seeking opportunities to work in the embedded development field.
