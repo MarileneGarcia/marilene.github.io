@@ -1,4 +1,5 @@
 # Final report for GSoC'25
+
 My GSoC Experience with Analog Devices  
 <img src="https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/midia/setup_test.jpg?raw=true" alt="setup" width="470" height="700">
 
