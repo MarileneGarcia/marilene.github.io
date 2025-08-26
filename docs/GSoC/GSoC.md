@@ -1,6 +1,6 @@
 # Final report for GSoC'25
 My GSoC Experience with Analog Devices  
-<img src="midia/setup_test.jpg" alt="setup" width="470" height="700">
+<img src="https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/midia/setup_test.jpg?raw=true" alt="setup" width="470" height="700">
 
 ## Table of Contents
 1. [About Me](#about-me)
@@ -52,7 +52,7 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 
 ### Demo of the user-space program on Raspberry Pi 5 reading values from my MAX14001 driver version
 - [Demo Linux Kernel Driver MAX14001](https://www.youtube.com/shorts/xqOkkvufINA)  
-![demo](midia/demo.gif)
+![demo](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/GSoC/midia/demo.gif?raw=true)
 
 ## Important Links
 - Pull Request with the MAX14001 driver code in the Analog Devices repository: [https://github.com/analogdevicesinc/linux/pull/2848](https://github.com/analogdevicesinc/linux/pull/2848)
