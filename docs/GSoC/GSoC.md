@@ -62,5 +62,13 @@ In addition to ADC readings, the MAX14001/MAX14002 offers several features, such
 - Kernel mailing list thread related to MAX14001: [https://lore.kernel.org/all/?q=max14001](https://lore.kernel.org/all/?q=max14001)
 
 ## Future Work
+- As mentioned, merge my code with the previous implementation and improve it until it is accepted into the kernel upstream.
+- Submit additional patches with the features missing in the first driver version, such as support for the binary comparator, inrush current, and fault alert. I intend to continue sending patches to cover all the device’s features even after GSoC ends.
+- Review the formulas used in the user-space program to ensure their accuracy.
+- Acquire a DC source to test higher voltage and current inputs.
+
+## Communication with the Organization and Mentors
+We held weekly Zoom meetings and maintained an open chat on Slack.
 
 ## Thanks to My Mentors
+I would like to thank my mentors Marcelo Schmitt, Ceclan Dumitru, Jonathan Santos, and Dragos Bogdan for their guidance, code reviews, and explanations about the IIO subsystem. Special thanks to Marcelo, with whom I have communicated almost daily for reviews and advice, and who conducted most of the driver code review. I also want to thank Dumitru for providing valuable insights at the beginning of the development process.
