@@ -1,3 +1,3 @@
 # Marilene's Blog
 
-## [Final report for GSoC'25](https://github.com/MarileneGarcia/marilene.github.io/blob/main/docs/gsoc.md)
+## [Final report for GSoC'25](GSoC/GSoC.md)
